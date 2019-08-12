@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<!-- the ?v=1 in favicon is so that it won't use the cached icon from the previous apps the name (favicon.png) is used in all apps-->
+<html>
+    <head>
+        <title>Todo App</title>
+        <link rel="icon" href="images/favicon.png?v=1" type="image/x-icon">
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <h1 class="header__title">To-Do App</h1>
+                <h2 class="header__subtitle">What do you need to do?</h2>
+            </div>
+        </div>
+        
+        <div class="actions">
+            <div class="actions__container">
+                <input id="search-text" type="text" class="input" placeholder="Search To-Do List">
+                <label class="checkbox">
+                    <input id="hide-completed" type="checkbox"> Hide Completed
+                </label>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div id="todos">
+                <!-- Search Result -->
+            </div>
+            <form id="add-todo">
+                <input type="text" class="input" placeholder="Add a todo" name="text">
+                <button class="button">Add Todo</button>
+            </form>
+        </div>
+
+        
+        <script src="scripts/uuidv4.js"></script>
+        <script src="scripts/todo-functions.js"></script>
+        <script src="scripts/todo-app.js"></script> 
+    </body>
+</html>
